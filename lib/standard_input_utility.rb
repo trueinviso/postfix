@@ -1,4 +1,4 @@
-require "./expression_evaluator"
+require "./lib/expression_evaluator"
 
 module StandardInputUtility
   extend self

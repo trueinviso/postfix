@@ -1,4 +1,4 @@
-require "./validator"
+require "./lib/validator"
 
 class ExpressionEvaluator
   attr_accessor :tokens, :stack
