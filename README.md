@@ -3,23 +3,34 @@
 Reverse Polish Notation calculator written in Ruby.
 
 ### Installation ###
-  # Cloning the repository
-  $ git clone git@github.com:trueinviso/postfix.git
+- Cloning the repository
+```
+$ git clone git@github.com:trueinviso/postfix.git
+```
 
-  # Requires bundler
-  $ gem install bundler
-  $ bundle install
+- Requires bundler
+```
+$ gem install bundler
+$ bundle install
+```
 
 ### Usage ###
-  $ ruby postfix.rb
-    > 5
-      5.0
-    > 8
-      8.0
-    > +
-      13.0
-    > q
-      "Have a good day."
+```
+$ ruby postfix.rb
+  > 5
+    5.0
+  > 8
+    8.0
+  > +
+    13.0
+  > q
+    "Have a good day."
+
+$ rspec spec/
+  ................
+  16 examples, 0 failures
+```
+---
 
 ### High-level description ###
 
