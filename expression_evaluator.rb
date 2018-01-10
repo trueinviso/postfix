@@ -9,7 +9,7 @@ class ExpressionEvaluator
   end
 
   def evaluate(expression)
-    expression.split(" ").reduce(@tokens) { |ary, t| ary.push t }
+    @tokens = expression.split(" ")
     execute
   end
 
