@@ -20,7 +20,7 @@ module StandardInputUtility
       ap "Invalid operand"
     rescue ExpressionEvaluator::InvalidExpressionError
       ap "You have entered an invalid expression"
-    else
+    rescue StandardError
       ap "There was an error, exiting."
     end
   end

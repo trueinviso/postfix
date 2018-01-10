@@ -20,7 +20,7 @@ class ExpressionEvaluator
       token = tokens.shift
       evaluate_token(token)
     end
-    stack.first
+    stack.last
   end
 
   def digit?(token)
@@ -29,7 +29,7 @@ class ExpressionEvaluator
 
   def evaluate_token(token)
     if digit?(token)
-      stack.push(token.to_i)
+      stack.push(token.to_f)
     else
       validate(token)
       calculate(token)
