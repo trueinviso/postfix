@@ -7,10 +7,13 @@ module StandardInputUtility
     evaluator = ExpressionEvaluator.new
 
     begin
-      while(true) do
+      loop do
         print("> ")
         expression = STDIN.gets.chomp
-        abort("Have a good day.") if quit?(expression)
+        if quit?(expression)
+          ap "Have a good day."
+          break
+        end
         ap evaluator.evaluate(expression)
       end
     rescue Validator::IllegalArgumentException
